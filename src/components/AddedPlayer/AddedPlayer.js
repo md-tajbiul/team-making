@@ -8,11 +8,11 @@ const AddedPlayer = (props) => {
     const cartStyle = {borderRadius: '10px', textAlign: 'left', padding: '15px', width: '600px', margin: '0 auto', backgroundColor: '#292424', color: 'white'}
     return (
         <div style={cartStyle}>
+            <h2 style={{textAlign: "center", borderBottom: "2px solid white", paddingBottom: '5px'}}>Selected Players</h2>
             <h3>Total Added Player: {selectedPlayer.length}</h3>
             <h3>Total Cost: ${totalCost}</h3>
             <h3>Added Player Name: {Name}</h3>
             <h3>Added Player Cost: {Cost}</h3>
-            
         </div>
     );
 };
