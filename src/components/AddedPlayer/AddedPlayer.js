@@ -5,7 +5,8 @@ const AddedPlayer = (props) => {
     const totalCost = selectedPlayer.reduce((sum, player) => sum + player.cost, 0)
     const Name = selectedPlayer.map(player => player.name)
     const Cost = selectedPlayer.map(player => player.cost)
-    const cartStyle = {borderRadius: '10px', textAlign: 'left', padding: '15px', width: '600px', margin: '0 auto', backgroundColor: '#292424', color: 'white'}
+    const cartStyle = {borderRadius: '10px', textAlign: 'left', padding: '15px', width: '600px', margin: '0 auto', backgroundColor: '#292424', color: 'white'};
+
     return (
         <div style={cartStyle}>
             <h2 style={{textAlign: "center", borderBottom: "2px solid white", paddingBottom: '5px'}}>Selected Players</h2>
